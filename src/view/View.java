@@ -1,5 +1,7 @@
 package view;
 
+
+
 import java.awt.*;
 import java.io.FileNotFoundException;
 import java.text.SimpleDateFormat;
@@ -13,11 +15,12 @@ import model.InvoiceHeader;
 import model.InvoicesHeaderTableModel;
 import model.InvoicesLineTableModel;
 import controller.*;
+import view.*;
 
 public class View extends JFrame {
 
-    javax.swing.JFileChooser chooser;
-    javax.swing.JOptionPane jOptionPaneMessage;
+    JFileChooser chooser;
+    JOptionPane jOptionPaneMessage;
     private SimpleDateFormat date = new SimpleDateFormat("dd-MM-yyyy");
     private FileOperations fileOperations = new FileOperations(this);
 
@@ -45,57 +48,57 @@ public class View extends JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        CreatNewInvoiceDialog = new javax.swing.JDialog();
-        NewCustomerName = new javax.swing.JTextField();
-        NewCustomerNameLabel = new javax.swing.JLabel();
-        NewInvoiceDateField = new javax.swing.JTextField();
-        NewInvoiceDateLabel = new javax.swing.JLabel();
-        CreatNewInvoiceOK = new javax.swing.JButton();
-        CreatNewInvoiceCancel = new javax.swing.JButton();
-        AddItemDialog = new javax.swing.JDialog();
-        NewItemName = new javax.swing.JTextField();
-        NewItemNameLabel = new javax.swing.JLabel();
-        NewItemPriceLabel = new javax.swing.JLabel();
-        AddItemDialogOK = new javax.swing.JButton();
-        AddItemDialogCancel = new javax.swing.JButton();
-        NewItemPrice = new javax.swing.JTextField();
-        NewItemPriceSpinner = new javax.swing.JSpinner();
-        NewItemCountLabel = new javax.swing.JLabel();
-        InvoicesTablePanel = new javax.swing.JPanel();
-        InvoicesTableLabel = new javax.swing.JLabel();
-        CreatNewInvoiceButton = new javax.swing.JButton();
-        DeleteInvoiceButton = new javax.swing.JButton();
-        InvoiceTableScrollPane = new javax.swing.JScrollPane();
-        InvoiceTable = new javax.swing.JTable();
-        InvoicesItemsPanel = new javax.swing.JPanel();
-        InvoiceNumberStaticLabel = new javax.swing.JLabel();
-        InvoiceNumberLabel = new javax.swing.JLabel();
-        InvoiceDateLabel = new javax.swing.JLabel();
-        CustomerNameLabel = new javax.swing.JLabel();
-        InvoiceTotalStaticLabel = new javax.swing.JLabel();
-        InvoicesItemsLabel = new javax.swing.JLabel();
-        InvoiceDateTextField = new javax.swing.JTextField();
-        CustomerNameTextField = new javax.swing.JTextField();
-        InvoiceTotalLabel = new javax.swing.JLabel();
-        InvoicesLineTableScrollPane = new javax.swing.JScrollPane();
-        InvoicesLineTable = new javax.swing.JTable();
-        DeleteItemButton = new javax.swing.JButton();
-        AddItemButton = new javax.swing.JButton();
-        SaveButton = new javax.swing.JButton();
-        CancelButton = new javax.swing.JButton();
-        MenuBar = new javax.swing.JMenuBar();
-        FileMenu = new javax.swing.JMenu();
-        LoadFile = new javax.swing.JMenuItem();
-        SaveFile = new javax.swing.JMenuItem();
-        jSeparator1 = new javax.swing.JPopupMenu.Separator();
-        Quit = new javax.swing.JMenuItem();
+        CreatNewInvoiceDialog = new JDialog();
+        NewCustomerName = new JTextField();
+        NewCustomerNameLabel = new JLabel();
+        NewInvoiceDateField = new JTextField();
+        NewInvoiceDateLabel = new JLabel();
+        CreatNewInvoiceOK = new JButton();
+        CreatNewInvoiceCancel = new JButton();
+        AddItemDialog = new JDialog();
+        NewItemName = new JTextField();
+        NewItemNameLabel = new JLabel();
+        NewItemPriceLabel = new JLabel();
+        AddItemDialogOK = new JButton();
+        AddItemDialogCancel = new JButton();
+        NewItemPrice = new JTextField();
+        NewItemPriceSpinner = new JSpinner();
+        NewItemCountLabel = new JLabel();
+        InvoicesTablePanel = new JPanel();
+        InvoicesTableLabel = new JLabel();
+        CreatNewInvoiceButton = new JButton();
+        DeleteInvoiceButton = new JButton();
+        InvoiceTableScrollPane = new JScrollPane();
+        InvoiceTable = new JTable();
+        InvoicesItemsPanel = new JPanel();
+        InvoiceNumberStaticLabel = new JLabel();
+        InvoiceNumberLabel = new JLabel();
+        InvoiceDateLabel = new JLabel();
+        CustomerNameLabel = new JLabel();
+        InvoiceTotalStaticLabel = new JLabel();
+        InvoicesItemsLabel = new JLabel();
+        InvoiceDateTextField = new JTextField();
+        CustomerNameTextField = new JTextField();
+        InvoiceTotalLabel = new JLabel();
+        InvoicesLineTableScrollPane = new JScrollPane();
+        InvoicesLineTable = new JTable();
+        DeleteItemButton = new JButton();
+        AddItemButton = new JButton();
+        SaveButton = new JButton();
+        CancelButton = new JButton();
+        MenuBar = new JMenuBar();
+        FileMenu = new JMenu();
+        LoadFile = new JMenuItem();
+        SaveFile = new JMenuItem();
+        jSeparator1 = new JPopupMenu.Separator();
+        Quit = new JMenuItem();
 
-        CreatNewInvoiceDialog.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        CreatNewInvoiceDialog.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         CreatNewInvoiceDialog.setTitle("Creat New Invoice");
-        CreatNewInvoiceDialog.setBounds(new java.awt.Rectangle(100, 100, 100, 100));
-        CreatNewInvoiceDialog.setMinimumSize(new java.awt.Dimension(400, 200));
+        CreatNewInvoiceDialog.setBounds(new Rectangle(100, 100, 100, 100));
+        CreatNewInvoiceDialog.setMinimumSize(new Dimension(400, 200));
         CreatNewInvoiceDialog.setModal(true);
-        CreatNewInvoiceDialog.setSize(new java.awt.Dimension(100, 100));
+        CreatNewInvoiceDialog.setSize(new Dimension(100, 100));
         //Point p=InvoicesTablePanel.getLocationOnScreen();
         //CreatNewInvoiceDialog.setLocation(p.x+10,p.y+10);
         //CreatNewInvoiceDialog.setLocationRelativeTo(InvoiceTable);
@@ -110,43 +113,43 @@ public class View extends JFrame {
 
         CreatNewInvoiceCancel.setText("Cancel");
 
-        javax.swing.GroupLayout CreatNewInvoiceDialogLayout = new javax.swing.GroupLayout(CreatNewInvoiceDialog.getContentPane());
+        GroupLayout CreatNewInvoiceDialogLayout = new GroupLayout(CreatNewInvoiceDialog.getContentPane());
         CreatNewInvoiceDialog.getContentPane().setLayout(CreatNewInvoiceDialogLayout);
         CreatNewInvoiceDialogLayout.setHorizontalGroup(
-                CreatNewInvoiceDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(CreatNewInvoiceDialogLayout.createSequentialGroup()
-                                .addGap(75, 75, 75)
-                                .addComponent(CreatNewInvoiceOK, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
-                                .addComponent(CreatNewInvoiceCancel, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(78, 78, 78))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CreatNewInvoiceDialogLayout.createSequentialGroup()
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(CreatNewInvoiceDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(NewCustomerNameLabel)
-                                        .addComponent(NewInvoiceDateLabel))
-                                .addGap(35, 35, 35)
-                                .addGroup(CreatNewInvoiceDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(NewInvoiceDateField, javax.swing.GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
-                                        .addComponent(NewCustomerName))
-                                .addGap(45, 45, 45))
+            CreatNewInvoiceDialogLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addGroup(CreatNewInvoiceDialogLayout.createSequentialGroup()
+                .addGap(75, 75, 75)
+                .addComponent(CreatNewInvoiceOK, GroupLayout.PREFERRED_SIZE, 75, GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                .addComponent(CreatNewInvoiceCancel, GroupLayout.PREFERRED_SIZE, 75, GroupLayout.PREFERRED_SIZE)
+                .addGap(78, 78, 78))
+            .addGroup(GroupLayout.Alignment.TRAILING, CreatNewInvoiceDialogLayout.createSequentialGroup()
+                .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(CreatNewInvoiceDialogLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                    .addComponent(NewCustomerNameLabel)
+                    .addComponent(NewInvoiceDateLabel))
+                .addGap(35, 35, 35)
+                .addGroup(CreatNewInvoiceDialogLayout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
+                    .addComponent(NewInvoiceDateField, GroupLayout.DEFAULT_SIZE, 184, Short.MAX_VALUE)
+                    .addComponent(NewCustomerName))
+                .addGap(45, 45, 45))
         );
         CreatNewInvoiceDialogLayout.setVerticalGroup(
-                CreatNewInvoiceDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(CreatNewInvoiceDialogLayout.createSequentialGroup()
-                                .addGap(30, 30, 30)
-                                .addGroup(CreatNewInvoiceDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(NewCustomerName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(NewCustomerNameLabel))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(CreatNewInvoiceDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(NewInvoiceDateField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(NewInvoiceDateLabel))
-                                .addGap(26, 26, 26)
-                                .addGroup(CreatNewInvoiceDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(CreatNewInvoiceOK)
-                                        .addComponent(CreatNewInvoiceCancel))
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            CreatNewInvoiceDialogLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addGroup(CreatNewInvoiceDialogLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(CreatNewInvoiceDialogLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                    .addComponent(NewCustomerName, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NewCustomerNameLabel))
+                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(CreatNewInvoiceDialogLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                    .addComponent(NewInvoiceDateField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NewInvoiceDateLabel))
+                .addGap(26, 26, 26)
+                .addGroup(CreatNewInvoiceDialogLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                    .addComponent(CreatNewInvoiceOK)
+                    .addComponent(CreatNewInvoiceCancel))
+                .addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         InvoicesTableLabel.setFont(new Font("Arial", Font.BOLD, 12));
@@ -154,14 +157,14 @@ public class View extends JFrame {
         CreatNewInvoiceButton.setFont(new Font("Arial", Font.BOLD, 12));
         DeleteInvoiceButton.setFont(new Font("Arial", Font.BOLD, 12));
 
-        AddItemDialog.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        AddItemDialog.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         AddItemDialog.setTitle("Add New Item To Invoice Number ");
         AddItemDialog.setAlwaysOnTop(false);
-        AddItemDialog.setBounds(new java.awt.Rectangle(100, 100, 100, 100));
-        AddItemDialog.setLocation(new java.awt.Point(600, 250));
-        AddItemDialog.setMinimumSize(new java.awt.Dimension(400, 200));
+        AddItemDialog.setBounds(new Rectangle(100, 100, 100, 100));
+        AddItemDialog.setLocation(new Point(600, 250));
+        AddItemDialog.setMinimumSize(new Dimension(400, 200));
         AddItemDialog.setModal(true);
-        AddItemDialog.setSize(new java.awt.Dimension(100, 100));
+        AddItemDialog.setSize(new Dimension(100, 100));
 
         NewItemNameLabel.setText("Item Name:");
 
@@ -171,56 +174,56 @@ public class View extends JFrame {
 
         AddItemDialogCancel.setText("Cancel");
 
-        NewItemPriceSpinner.setModel(new javax.swing.SpinnerNumberModel(1, 1, 50, 1));
+        NewItemPriceSpinner.setModel(new SpinnerNumberModel(1, 1, 50, 1));
 
         NewItemCountLabel.setText("Item Count:");
 
-        javax.swing.GroupLayout AddItemDialogLayout = new javax.swing.GroupLayout(AddItemDialog.getContentPane());
+        GroupLayout AddItemDialogLayout = new GroupLayout(AddItemDialog.getContentPane());
         AddItemDialog.getContentPane().setLayout(AddItemDialogLayout);
         AddItemDialogLayout.setHorizontalGroup(
-                AddItemDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(AddItemDialogLayout.createSequentialGroup()
-                                .addGroup(AddItemDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(AddItemDialogLayout.createSequentialGroup()
-                                                .addContainerGap()
-                                                .addGroup(AddItemDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(NewItemNameLabel)
-                                                        .addComponent(NewItemPriceLabel)
-                                                        .addComponent(NewItemCountLabel))
-                                                .addGap(35, 35, 35)
-                                                .addGroup(AddItemDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                        .addComponent(NewItemName)
-                                                        .addComponent(NewItemPrice)
-                                                        .addGroup(AddItemDialogLayout.createSequentialGroup()
-                                                                .addComponent(NewItemPriceSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 45, Short.MAX_VALUE)
-                                                                .addGap(71, 71, 71))))
-                                        .addGroup(AddItemDialogLayout.createSequentialGroup()
-                                                .addGap(75, 75, 75)
-                                                .addComponent(AddItemDialogOK, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(38, 38, 38)
-                                                .addComponent(AddItemDialogCancel, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addContainerGap(22, Short.MAX_VALUE))
+            AddItemDialogLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addGroup(AddItemDialogLayout.createSequentialGroup()
+                .addGroup(AddItemDialogLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                    .addGroup(AddItemDialogLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(AddItemDialogLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                            .addComponent(NewItemNameLabel)
+                            .addComponent(NewItemPriceLabel)
+                            .addComponent(NewItemCountLabel))
+                        .addGap(35, 35, 35)
+                        .addGroup(AddItemDialogLayout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
+                            .addComponent(NewItemName)
+                            .addComponent(NewItemPrice)
+                            .addGroup(AddItemDialogLayout.createSequentialGroup()
+                                .addComponent(NewItemPriceSpinner, GroupLayout.PREFERRED_SIZE, 45, Short.MAX_VALUE)
+                                .addGap(71, 71, 71))))
+                    .addGroup(AddItemDialogLayout.createSequentialGroup()
+                        .addGap(75, 75, 75)
+                        .addComponent(AddItemDialogOK, GroupLayout.PREFERRED_SIZE, 75, GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38)
+                        .addComponent(AddItemDialogCancel, GroupLayout.PREFERRED_SIZE, 75, GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
         AddItemDialogLayout.setVerticalGroup(
-                AddItemDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(AddItemDialogLayout.createSequentialGroup()
-                                .addGap(30, 30, 30)
-                                .addGroup(AddItemDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(NewItemName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(NewItemNameLabel))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(AddItemDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(NewItemPriceLabel)
-                                        .addComponent(NewItemPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(AddItemDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(NewItemCountLabel)
-                                        .addComponent(NewItemPriceSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(AddItemDialogLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(AddItemDialogOK)
-                                        .addComponent(AddItemDialogCancel))
-                                .addContainerGap(26, Short.MAX_VALUE))
+            AddItemDialogLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+            .addGroup(AddItemDialogLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(AddItemDialogLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                    .addComponent(NewItemName, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NewItemNameLabel))
+                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(AddItemDialogLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                    .addComponent(NewItemPriceLabel)
+                    .addComponent(NewItemPrice, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(AddItemDialogLayout.createParallelGroup(GroupLayout.Alignment.LEADING)
+                    .addComponent(NewItemCountLabel)
+                    .addComponent(NewItemPriceSpinner, GroupLayout.PREFERRED_SIZE, 20, GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(AddItemDialogLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                    .addComponent(AddItemDialogOK)
+                    .addComponent(AddItemDialogCancel))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         InvoicesTableLabel.setFont(new Font("Arial", Font.BOLD, 12));
@@ -231,14 +234,14 @@ public class View extends JFrame {
         InvoiceNumberStaticLabel.setFont(new Font("Arial", Font.BOLD, 12));
 
         setTitle("Sales Invoice Generator");
-        setLocation(new java.awt.Point(0, 0));
+        setLocation(new Point(0, 0));
         setLocationByPlatform(true);
-        setMinimumSize(new java.awt.Dimension(1200, 0));
+        setMinimumSize(new Dimension(1200, 0));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         InvoicesTablePanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        InvoicesTableLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        InvoicesTableLabel.setFont(new Font("Helvetica Neue", 1, 13)); // NOI18N
         InvoicesTableLabel.setText("Invoices Table");
         InvoicesTableLabel.setToolTipText("");
         InvoicesTablePanel.add(InvoicesTableLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
@@ -253,14 +256,14 @@ public class View extends JFrame {
         DeleteInvoiceButton.setFont(new Font("Arial", Font.BOLD, 12));
 
         InvoiceTable.setModel(new javax.swing.table.DefaultTableModel(
-                new Object [][] {
+            new Object [][] {
 
-                },
-                new String [] {
-                        "No.", "Date", "Customer", "Total"
-                }
+            },
+            new String [] {
+                "No.", "Date", "Customer", "Total"
+            }
         ));
-        InvoiceTable.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        InvoiceTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         InvoiceTableScrollPane.setViewportView(InvoiceTable);
         if (InvoiceTable.getColumnModel().getColumnCount() > 0) {
             InvoiceTable.getColumnModel().getColumn(0).setResizable(false);
@@ -271,7 +274,7 @@ public class View extends JFrame {
 
         getContentPane().add(InvoicesTablePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 650));
 
-        InvoicesItemsPanel.setPreferredSize(new java.awt.Dimension(521, 472));
+        InvoicesItemsPanel.setPreferredSize(new Dimension(521, 472));
         InvoicesItemsPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         InvoiceNumberStaticLabel.setText("Invoice Number");
@@ -292,7 +295,7 @@ public class View extends JFrame {
         InvoicesItemsPanel.add(InvoiceTotalStaticLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 123, -1, -1));
         InvoiceTotalStaticLabel.setFont(new Font("Arial", Font.BOLD, 12));
 
-        InvoicesItemsLabel.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        InvoicesItemsLabel.setFont(new Font("Helvetica Neue", 1, 13)); // NOI18N
         InvoicesItemsLabel.setText("Invoice Itemes");
         InvoicesItemsPanel.add(InvoicesItemsLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 180, -1, -1));
         InvoicesItemsLabel.setFont(new Font("Arial", Font.BOLD, 12));
@@ -307,19 +310,19 @@ public class View extends JFrame {
         InvoicesItemsPanel.add(InvoiceTotalLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(163, 123, -1, -1));
         InvoiceTotalLabel.setFont(new Font("Arial", Font.BOLD, 12));
 
-        InvoicesLineTableScrollPane.setMinimumSize(new java.awt.Dimension(100, 100));
+        InvoicesLineTableScrollPane.setMinimumSize(new Dimension(100, 100));
 
         InvoicesLineTable.setModel(new javax.swing.table.DefaultTableModel(
-                new Object [][] {
+            new Object [][] {
 
-                },
-                new String [] {
-                        "No.", "Item Name", "Item Price", "Count", "Item Total"
-                }
+            },
+            new String [] {
+                "No.", "Item Name", "Item Price", "Count", "Item Total"
+            }
         ));
         InvoicesLineTable.setFocusTraversalPolicyProvider(true);
-        InvoicesLineTable.setMinimumSize(new java.awt.Dimension(100, 100));
-        InvoicesLineTable.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        InvoicesLineTable.setMinimumSize(new Dimension(100, 100));
+        InvoicesLineTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         InvoicesLineTableScrollPane.setViewportView(InvoicesLineTable);
         InvoicesLineTable.getAccessibleContext().setAccessibleName("InvoicesLineTable");
 
@@ -367,7 +370,7 @@ public class View extends JFrame {
 
         FileMenu.setText("File");
 
-        LoadFile.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        LoadFile.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_L, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         LoadFile.setText("Load");
         LoadFile.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -376,13 +379,13 @@ public class View extends JFrame {
         });
         FileMenu.add(LoadFile);
 
-        SaveFile.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        SaveFile.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         SaveFile.setText("Save");
         SaveFile.setEnabled(false);
         FileMenu.add(SaveFile);
         FileMenu.add(jSeparator1);
 
-        Quit.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        Quit.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         Quit.setText("Quit");
         Quit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -425,50 +428,50 @@ public class View extends JFrame {
      * @param args the command line arguments
      */
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AddItemButton;
-    private static javax.swing.JDialog AddItemDialog;
-    private javax.swing.JButton AddItemDialogCancel;
-    public javax.swing.JButton AddItemDialogOK;
-    private javax.swing.JButton CancelButton;
-    private javax.swing.JButton CreatNewInvoiceButton;
-    private javax.swing.JButton CreatNewInvoiceCancel;
-    private static javax.swing.JDialog CreatNewInvoiceDialog;
-    public javax.swing.JButton CreatNewInvoiceOK;
-    private javax.swing.JLabel CustomerNameLabel;
-    private javax.swing.JTextField CustomerNameTextField;
-    private javax.swing.JButton DeleteInvoiceButton;
-    private javax.swing.JButton DeleteItemButton;
-    private javax.swing.JMenu FileMenu;
-    private javax.swing.JLabel InvoiceDateLabel;
-    private javax.swing.JTextField InvoiceDateTextField;
-    private javax.swing.JLabel InvoiceNumberLabel;
-    private javax.swing.JLabel InvoiceNumberStaticLabel;
-    private javax.swing.JTable InvoiceTable;
-    private javax.swing.JScrollPane InvoiceTableScrollPane;
-    private javax.swing.JLabel InvoiceTotalLabel;
-    private javax.swing.JLabel InvoiceTotalStaticLabel;
-    private javax.swing.JLabel InvoicesItemsLabel;
-    private javax.swing.JPanel InvoicesItemsPanel;
-    private javax.swing.JTable InvoicesLineTable;
-    private javax.swing.JScrollPane InvoicesLineTableScrollPane;
-    private javax.swing.JLabel InvoicesTableLabel;
-    private javax.swing.JPanel InvoicesTablePanel;
-    private javax.swing.JMenuItem LoadFile;
-    private javax.swing.JMenuBar MenuBar;
-    private javax.swing.JTextField NewCustomerName;
-    private javax.swing.JLabel NewCustomerNameLabel;
-    private javax.swing.JTextField NewInvoiceDateField;
-    private javax.swing.JLabel NewInvoiceDateLabel;
-    private javax.swing.JLabel NewItemCountLabel;
-    private javax.swing.JTextField NewItemName;
-    private javax.swing.JLabel NewItemNameLabel;
-    private javax.swing.JTextField NewItemPrice;
-    private javax.swing.JLabel NewItemPriceLabel;
-    private javax.swing.JSpinner NewItemPriceSpinner;
-    private javax.swing.JMenuItem Quit;
-    private javax.swing.JButton SaveButton;
-    private javax.swing.JMenuItem SaveFile;
-    private javax.swing.JPopupMenu.Separator jSeparator1;
+    private JButton AddItemButton;
+    private static JDialog AddItemDialog;
+    private JButton AddItemDialogCancel;
+    public JButton AddItemDialogOK;
+    private JButton CancelButton;
+    private JButton CreatNewInvoiceButton;
+    private JButton CreatNewInvoiceCancel;
+    private static JDialog CreatNewInvoiceDialog;
+    public JButton CreatNewInvoiceOK;
+    private JLabel CustomerNameLabel;
+    private JTextField CustomerNameTextField;
+    private JButton DeleteInvoiceButton;
+    private JButton DeleteItemButton;
+    private JMenu FileMenu;
+    private JLabel InvoiceDateLabel;
+    private JTextField InvoiceDateTextField;
+    private JLabel InvoiceNumberLabel;
+    private JLabel InvoiceNumberStaticLabel;
+    private JTable InvoiceTable;
+    private JScrollPane InvoiceTableScrollPane;
+    private JLabel InvoiceTotalLabel;
+    private JLabel InvoiceTotalStaticLabel;
+    private JLabel InvoicesItemsLabel;
+    private JPanel InvoicesItemsPanel;
+    private JTable InvoicesLineTable;
+    private JScrollPane InvoicesLineTableScrollPane;
+    private JLabel InvoicesTableLabel;
+    private JPanel InvoicesTablePanel;
+    private JMenuItem LoadFile;
+    private JMenuBar MenuBar;
+    private JTextField NewCustomerName;
+    private JLabel NewCustomerNameLabel;
+    private JTextField NewInvoiceDateField;
+    private JLabel NewInvoiceDateLabel;
+    private JLabel NewItemCountLabel;
+    private JTextField NewItemName;
+    private JLabel NewItemNameLabel;
+    private JTextField NewItemPrice;
+    private JLabel NewItemPriceLabel;
+    private JSpinner NewItemPriceSpinner;
+    private JMenuItem Quit;
+    private JButton SaveButton;
+    private JMenuItem SaveFile;
+    private JPopupMenu.Separator jSeparator1;
     // End of variables declaration//GEN-END:variables
 
     public JMenuItem getLoadFile() {
@@ -498,7 +501,7 @@ public class View extends JFrame {
     public JButton getCancelButton() {
         return CancelButton;
     }
-
+    
     public JButton getSaveButton() {
         return SaveButton;
     }
@@ -613,13 +616,13 @@ public class View extends JFrame {
         int messageTypeInteger = 0;
         switch (messageType) {
             case "ERROR_MESSAGE" ->
-                    messageTypeInteger = 0;
+                messageTypeInteger = 0;
             case "QUESTION_MESSAGE" ->
-                    messageTypeInteger = 3;
+                messageTypeInteger = 3;
             case "WARNING_MESSAGE" ->
-                    messageTypeInteger = 2;
+                messageTypeInteger = 2;
             case "INFORMATION_MESSAGE" ->
-                    messageTypeInteger = 1;
+                messageTypeInteger = 1;
         }
         JOptionPane.showMessageDialog(component, message, title, messageTypeInteger);
     }
